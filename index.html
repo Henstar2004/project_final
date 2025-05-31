@@ -280,7 +280,7 @@ async function exportPDF() {
   doc.text("Attendance Record", 105, 29, null, null, "center");
 
   // ✅ Prepare table data
-  const tableData = [["Status", "Stop Name",  "Date & Time"]];
+  const tableData = [["Status", "ID",  "Date & Time"]];
   const rows = document.querySelectorAll("#attendanceTable tbody tr");
 
   rows.forEach(row => {
